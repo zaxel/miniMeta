@@ -4,6 +4,7 @@ import Likes from './Likes';
 import Title from './Title';
 import Comments from './Comments';
 import Spin from './Spin';
+import image from './sea.jpg'
 
 function App() {
   const error = useSelector(state => state.appReducer.error);
@@ -18,7 +19,7 @@ function App() {
             </div>
           )}
           <div className="card-image">
-            <img src="./sea.jpg" alt="ukrainian"/>
+            <img src={image} alt="ukrainian"/>
             <Title />
             <Likes />
           </div>
